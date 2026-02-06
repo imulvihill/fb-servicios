@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* En Tailwind v4, la configuración y los estilos base se cargan con el import de arriba */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  /* Evitamos el uso de @apply en el body para prevenir errores de compilación en v4 
+     si no se ha cargado la referencia del tema correctamente. 
+     Los estilos base se manejan mejor mediante clases en el HTML o CSS estándar. */
+  background-color: #f9fafb; /* bg-neutral-50 */
+  color: #171717; /* text-neutral-900 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Optimizaciones de scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #a3a3a3;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ea580c;
+}
