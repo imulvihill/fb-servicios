@@ -1,0 +1,16 @@
+{
+      "compilerOptions": {
+        "composite": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true
+      },
+      "include": ["vite.config.ts"]
+    }
+    ```
+    eof
+3.  **Subí los cambios a GitHub**:
+    ```bash
+    git add .
+    git commit -m "Fix: agregada configuracion de JSX para TypeScript"
+    git push origin main
